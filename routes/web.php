@@ -9,6 +9,7 @@ Route::get('/user/create', [UserController::class, 'create'])->name('user.create
 Route::post('/user/store', [UserController::class, 'store']) ->name('user.store');
 
 Route::get('/', [UserController::class, 'create']) ->name('user.create');
+
 Route::get('/contact/create', [ContactController::class, 'create'])->name('contact.create');
 Route::post('/contact/store', [ContactController::class, 'store']) ->name('contact.store');
 

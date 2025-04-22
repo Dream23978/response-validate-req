@@ -29,7 +29,6 @@ class UserController extends Controller
             'email' => 'required|string|unique:users,email',
             'password' => 'required|min:6|confirmed',
         ]);
-
         return redirect() ->back() ->with('success','Pesan Anda Telah dikirim!');
     }
 
