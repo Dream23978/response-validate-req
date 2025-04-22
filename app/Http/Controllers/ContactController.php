@@ -8,7 +8,7 @@ class ContactController extends Controller
 {
     public function create()
     {
-        return view('contact.index');
+        return view('contact.contact');
     }
 
     public function store(Request $request)
