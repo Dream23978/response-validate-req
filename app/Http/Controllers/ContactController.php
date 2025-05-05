@@ -18,6 +18,8 @@ class ContactController extends Controller
             'email' => 'required|string|unique:users,email',
             'hp' => 'required|min:11',
             'message' => 'required',
+        
+        
         ]);
 
         return redirect() ->back() ->with('success','Pesan Anda Telah dikirim!');
